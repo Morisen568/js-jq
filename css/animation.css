@@ -63,3 +63,20 @@
   background-repeat: no-repeat;
   opacity: 0.7;
 }
+
+.fadeRoll {
+  animation: rollAnime 0.8s forwards;
+  opacity: 0;
+  overflow: hidden;
+}
+
+@keyframes rollAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+  transform: rotateY(360deg);
+  opacity: 1;
+  }
+}

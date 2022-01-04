@@ -50,3 +50,21 @@ function fadeIn() {
 $(window).scroll(function () {
   fadeIn();
 });
+
+function fadeIn1() {
+
+$('.rollAnime').each(function () {
+  let scroll = $(window).scrollTop();
+  let triTop = $(this).offset().top + 100;
+  let winHeight = $(window).height();
+  if (scroll >= triTop - winHeight) {
+    $(this).addClass('fadeRoll');
+  } else {
+    $(this).removeClass('fadeRoll');
+  }
+});
+}
+
+$(window).scroll(function () {
+  fadeIn1();
+});
