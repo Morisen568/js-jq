@@ -10,31 +10,6 @@
   z-index: 5;
 }
 
-.contact_img {
-  background: url(../img/contact.png) no-repeat center;
-  background-size: cover;
-  width: 80%;
-  height: 450px;
-  position: relative;
-  left: 32.5%;
-  z-index: -1;
-  margin-bottom: 120px;
-  overflow: hidden;
-}
-
-.contact_img::before {
-  position: absolute;
-  content: "";
-  width: 380px;
-  height: 760px;
-  background: #fff;
-  z-index: 0;
-  -webkit-transform: rotate(50deg);
-  transform: rotate(50deg);
-  left: -9%;
-  top: -280px;
-}
-
 .contact_form {
   width: 90%;
   margin: 0 auto;

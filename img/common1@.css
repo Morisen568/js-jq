@@ -324,3 +324,29 @@ header .logo {
 }
 
 }
+
+        <div class="contact_img"></div>
+
+        /*.contact_img {
+  background: url(../img/contact.png) no-repeat center;
+  background-size: cover;
+  width: 80%;
+  height: 450px;
+  position: relative;
+  left: 32.5%;
+  z-index: -1;
+  margin-bottom: 120px;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+.contact_img::before {
+  position: absolute;
+  content: "";
+  width: 600px;
+  height: 760px;
+  background: #fff;
+  z-index: 0;
+  left: -79%;
+  top: -280px;
+}*/

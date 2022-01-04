@@ -8,7 +8,7 @@ function sizecheck() {
 sizecheck();
 $(function () {
 if (w > 769) {
-} else { 
+} else {
   $("header .drawer").click(function(){
   $('body').toggleClass('nav-open');
   $('header .navbar').fadeToggle(200);
@@ -19,4 +19,34 @@ if (w > 769) {
   $('header .navbar').fadeToggle(200);
     });
   }
-}); 
+});
+
+function fadeIn() {
+
+  $('.fadeLeftTrigger').each(function () {
+    let scroll = $(window).scrollTop();
+    let triTop = $(this).offset().top + 100;
+    let winHeight = $(window).height();
+    if (scroll >= triTop - winHeight) {
+      $(this).addClass('fadeLeft');
+    } else {
+      $(this).removeClass('fadeLeft');
+    }
+  });
+
+  $('.fadeRightTrigger').each(function () {
+    let scroll = $(window).scrollTop();
+    let triTop = $(this).offset().top + 100;
+    let winHeight = $(window).height();
+    if (scroll >= triTop - winHeight) {
+      $(this).addClass('fadeRight');
+    } else {
+      $(this).removeClass('fadeRight');
+    }
+  });
+
+}
+
+$(window).scroll(function () {
+  fadeIn();
+});

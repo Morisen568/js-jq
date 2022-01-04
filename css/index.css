@@ -345,7 +345,9 @@
     margin: 0 auto 10%;
     height: 120%;
   }
-  .service_item_service2, .service_itemserviced3, .service_itemservice4 {
+  .service_item._service2,
+  .service_item._service3,
+  .service_item._service4 {
     bottom: 0;
     margin: 0 auto 10%;
   }
